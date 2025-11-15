@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>TravelNow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/TravelNow/font/Agrandir-Regular.otf">
+</head>
+<body>
+
+    <header class="header">
+        <a href="../pagina_principal.html">
+            <img 
+                src="../img/header/header_titulo.png" 
+                alt="header-titulo" 
+                class="header-titulo"
+                id="volver-pagina-principal"
+            >
+        </a>
+        <div>
+            <svg viewBox="0 50 500 50" class="curva"> <!-- viewBox define el sistema de coordenadas (minX minY width height) -->
+                <path d="M0,50 Q250,100 500,50" stroke="black" stroke-width="1" fill="none" />
+                <!-- define la geometría del trazado:
+                M = Move to (moverse a). Define punto inicial del trazado sin dibujar una línea
+                "0,50" son las coordenadas x=0, y=50
+                Q = curva de Bézier cuadrática.
+                250,100 = punto de control (como sera la curvatura)
+                500,50 = punto final de la curva (x=500, y=50) -->
+            </svg>
+            <div class="contenedor-icono">
+                    <a href="../pagina_contacto/pagina_contacto.html">
+                        <img 
+                            src="../img/header/header_contacto.png" 
+                            alt="header-contacto-icon" 
+                            class="icon header-contacto-icon"
+                            id="ir-pagina-contacto" 
+                        >
+                    </a>
+                    <span class="tooltip header-contacto-tooltip">
+                        Contacto
+                    </span>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="pagina_busqueda.html">
+                        <img 
+                            src="../img/header/header_busqueda.png" 
+                            alt="header-busqueda-icon" 
+                            class="icon header-busqueda-icon"
+                        >
+                    </a>
+                    <span class="tooltip header-busqueda-tooltip">
+                        Buscar
+                    </span>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="pagina_fav.html"></a>
+                    <img 
+                        src="../img/header/header_fav.png" 
+                        alt="header-fav-icon" 
+                        class="icon header-fav-icon"
+                    >
+                    <span class="tooltip header-fav-tooltip">
+                        Favoritos
+                    </span>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="../pagina_cuenta/registro.html">
+                        <img 
+                            src="../img/header/header_cuenta.png" 
+                            alt="header-cuenta-icon" 
+                            class="icon header-cuenta-icon"
+                        >
+                    </a>
+                    <span class="tooltip header-cuenta-tooltip">
+                        Tu cuenta
+                    </span>
+                </div>
+        </div>
+
+    </header>
+
+
+    <div class="pagina-registro">
+        <h2 class="mensaje-registro">¡Unite al viaje! :)</h2>
+        
+            <div class="contenedor">
+                <form id="formulario-registro" class="formulario">
+                    <h2>Crea tu cuenta</h2>
+
+                    <div class="input">
+                        <label>Nombre</label>
+                        <input type="text" id="nombre" required>
+                    </div>
+
+                    <div class="input">
+                        <label>Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <div class="input">
+                        <label>Contraseña</label>
+                        <input type="password" id="password" required minlength="6">
+                    </div>
+
+                    <button type="submit" class="boton-registro">Registrarme</button>
+                </form>
+            </div>
+       
+        <h3 class="ir-a-login">
+                <a href="../pagina_cuenta/login.html"><span>¿Ya tenés una cuenta? Inicia sesión</span></a>
+        </h3>
+    </div>
+    <footer class="footer">
+        <div class="footer-contenido">
+            <h3>Travel<span>Now</span></h3>
+            <p>Dirección: Calle Cualquiera 123, Ciudad Cualquiera</p>
+            <p>Contacto: contacto@travelnow.com | +54 11 1234-5678</p>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>
