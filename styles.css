@@ -195,11 +195,6 @@ body {
    gap: 0;
 }
 
-.linea-vuelo {
-   position: absolute;
-   top: 10%;
-   left: 100%;
-}
 
 .primera-seccion .planeta {
    width: 50%;
@@ -223,6 +218,7 @@ body {
    align-items: center;
    gap: 7rem;
    padding: 2rem;
+   position: relative;
 }
 
 .buscador #contenedor-salida {
@@ -237,12 +233,26 @@ body {
    padding: 10px 0px 10px 20px;
    /* arriba, derecha, abajo, izquierda */
    width: 300px;
+   z-index: 2;
 }
 
 .buscador #contenedor-destino {
    width: 100%;
    display: flex;
    justify-content: end;
+}
+
+.linea-vuelo {
+   position: absolute;
+   top: 15rem;
+   left: 6rem;
+   width: 80%;
+   height: 10rem;
+   border: solid 2px #444f6e;
+   border-right: none;
+   border-top: none;
+   border-radius: 25px;
+   z-index: 0;
 }
 
 
