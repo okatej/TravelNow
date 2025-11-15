@@ -337,6 +337,27 @@ body {
    /*transition hace que los cambios sean tranqui*/
 }
 
+
+.img {
+   width: 290px;
+   flex-shrink: 0;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.img:hover {
+   transform: scale(1.1);
+   transition: transform 0.3s ease;
+}
+
+.contenedor-carrusel {
+   position: relative;
+   display: flex;
+   gap: 0.5rem;
+   flex-wrap: nowrap;
+   transition: transform 0.5s ease;
+}
+
 .segunda-seccion .botones-estaciones .boton.seleccionado {
    background-color: #333d59;
    color: white;
@@ -347,6 +368,7 @@ body {
    position: relative;
    width: 100%;
    display: flex;
+   flex-wrap: nowrap;
    align-items: center;
    transition: transform 0.5s ease;
    padding: 0% 0% 0% 4.5%;
