@@ -1,221 +1,231 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <title>TravelNow</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/TravelNow/font/Agrandir-Regular.otf">
+   <title>TravelNow</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="styles.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="/TravelNow/font/Agrandir-Regular.otf">
+   <link rel="icon" href="img/logo.PNG">
+   <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,700,1,0" />
 </head>
 
 <body>
-    <div id="loader">
-        <div class="loader-contenido">
-            <img src="img/logo.PNG" alt="logo" class="loader-logo">
-        </div>
-    </div>
-    <audio autoplay loop>
-        <source src="/musica/musica_de_fondo.mp3" type="audio/mpeg">
-    </audio>
+   <div id="loader">
+      <div class="loader-contenido">
+         <img src="img/logo.PNG" alt="logo" class="loader-logo">
+      </div>
+   </div>
+   <audio autoplay loop>
+      <source src="./musica/musica_de_fondo.mp3" type="audio/mpeg">
+   </audio>
 
-    <header class="header">
-        <a href="pagina_principal.html">
-            <img 
-                src="img/header/header_titulo.png" 
-                alt="header-titulo" 
-                class="header-titulo"
-                id="volver-pagina-principal"
-            >
-        </a>
-        <div>
-            <svg viewBox="0 50 500 50" class="curva"> <!-- viewBox define el sistema de coordenadas (minX minY width height) -->
-                <path d="M0,50 Q250,100 500,50" stroke="black" stroke-width="1" fill="none" />
-                <!-- define la geometría del trazado:
+   <header class="header">
+      <a href="pagina_principal.html">
+         <img src="./img/header/header_titulo.png" alt="header-titulo" class="header-titulo"
+            id="volver-pagina-principal">
+      </a>
+      <div>
+         <svg viewBox="0 50 500 50" class="curva">
+            <!-- viewBox define el sistema de coordenadas (minX minY width height) -->
+            <path d="M0,50 Q250,100 500,50" stroke="black" stroke-width="1" fill="none" />
+            <!-- define la geometría del trazado:
                 M = Move to (moverse a). Define punto inicial del trazado sin dibujar una línea
                 "0,50" son las coordenadas x=0, y=50
                 Q = curva de Bézier cuadrática.
                 250,100 = punto de control (como sera la curvatura)
                 500,50 = punto final de la curva (x=500, y=50) -->
-            </svg>
-            <div class="contenedor-icono">
-                <a href="pagina_contacto/pagina_contacto.html">
-                    <img 
-                        src="img/header/header_contacto.png" 
-                        alt="header-contacto-icon" 
-                        class="icon header-contacto-icon"
-                        id="ir-pagina-contacto" 
-                    >
-                </a>
-                <span class="tooltip header-contacto-tooltip">
-                    Contacto
-                </span>
-                </div>
-                <div class="contenedor-icono">
-                    <a href="pagina_busqueda.html">
-                        <img 
-                            src="img/header/header_busqueda.png" 
-                            alt="header-busqueda-icon" 
-                            class="icon header-busqueda-icon"
-                        >
-                    </a>
-                    <span class="tooltip header-busqueda-tooltip">
-                        Buscar
-                    </span>
-                </div>
-                <div class="contenedor-icono">
-                    <a href="pagina_fav.html"></a>
-                    <img 
-                        src="img/header/header_fav.png" 
-                        alt="header-fav-icon" 
-                        class="icon header-fav-icon"
-                    >
-                    <span class="tooltip header-fav-tooltip">
-                        Favoritos
-                    </span>
-                </div>
-                <div class="contenedor-icono">
-                    <a href="pagina_cuenta/registro.html">
-                        <img 
-                            src="img/header/header_cuenta.png" 
-                            alt="header-cuenta-icon" 
-                            class="icon header-cuenta-icon"
-                        >
-                    </a>
-                    <span class="tooltip header-cuenta-tooltip">
-                        Tu cuenta
-                    </span>
-                </div>
-        </div>
+         </svg>
+         <div class="contenedor-icono" id="ir-pagina-contacto">
+            <a href="pagina_contacto/pagina_contacto.html">
+               <span class="material-symbols-outlined icon">
+                  call
+               </span>
+               <span class="tooltip header-contacto-tooltip">
+                  Contacto
+               </span>
+            </a>
+         </div>
 
-    </header>
+         <div class="contenedor-icono" id="ir-pagina-busqueda">
+            <a href="pagina_busqueda.html">
+               <span class="material-symbols-outlined icon">
+                  search
+               </span>
+               <span class="tooltip header-contacto-tooltip">
+                  Búsqueda
+               </span>
+            </a>
+         </div>
+
+         <div class="contenedor-icono" id="ir-pagina-favoritos">
+            <a href="pagina_busqueda.html">
+               <span class="material-symbols-outlined icon">
+                  favorite
+               </span>
+               <span class="tooltip header-contacto-tooltip">
+                  Favoritos
+               </span>
+            </a>
+         </div>
+
+         <div class="contenedor-icono" id="ir-pagina-cuenta">
+            <a href="pagina_busqueda.html">
+               <span class="material-symbols-outlined icon">
+                  person
+               </span>
+               <span class="tooltip header-contacto-tooltip">
+                  Cuenta
+               </span>
+            </a>
+         </div>
+
+      </div>
+
+   </header>
 
 
-    <main>
-        <div id="pagina-0" class="pagina-principal">
-            <div class="primera-seccion">
-                <img 
-                    src="img/primera-seccion/planeta.png" 
-                    alt="planeta" 
-                    class="planeta"
-                >
-                <h1 class="titulo">
-                    ¿A dónde querés viajar?
-                </h1>
-                <div class="buscador">
-                    <input 
-                        type="text" 
-                        name="ciudad-de-salida" 
-                        placeholder="Ciudad de salida..." 
-                        id="ciudad-de-salida"
-                    >
-                    <ul id="sugerencias" class="lista"></ul>
-                    <input 
-                        type="text" 
-                        name="ciudad-de-destino" 
-                        placeholder="Ciudad de destino..." 
-                        class="ciudad-de-destino"
-                    >
-                    <button class="boton-busqueda">
-                        Buscar
-                    </button>
-                </div>
-            </div> 
-            <div class="segunda-seccion">
-                <h2 class="titulo">
-                    Disfruta de viajes por estación
-                </h2>
-                <div class="botones-estaciones">
-                    <button class="boton" data-estacion="Primavera">
-                        Primavera
-                    </button>
-                    <button class="boton" data-estacion="">
-                        Verano
-                    </button>
-                    <button class="boton">
-                        Otoño
-                    </button>
-                    <button class="boton">
-                        Invierno
-                    </button>
-                </div>
-                <div class="carrusel-estaciones">
-                    <img class="img" src="img/carrusel-estaciones/portadas/v-elbolson-rionegro-portada.png" alt="El Bolson, Rio Negro">
-                    <img class="img" src="img/carrusel-estaciones/portadas/v-mardeplata-buenosaires-portada.png" alt="Mar de Plata, Buenos Aires">
-                    <img class="img" src="img/carrusel-estaciones/portadas/v-pinamar-bsas-portada.png" alt="Pinamar, Buenos Aires">
-                    <img class="img" src="img/carrusel-estaciones/portadas/v-puerto-madryl-chubut-portada.png" alt="Puerto Madryl, Chubut">
-                    <img class="img" src="img/carrusel-estaciones/portadas/v-selvamisionera-misiones-portada.png" alt="Selva Misionera, Misiones">
-                </div>
-                <button class="boton-anterior">&#10094;</button>
-                <button class="boton-siguiente">&#10095;</button>
-                
+   <main>
+      <div id="pagina-0" class="pagina-principal">
+         <div class="primera-seccion">
+            <img src="img/primera-seccion/planeta.png" alt="planeta" class="planeta">
+            <div class="buscador">
+               <h1 class="titulo">¿A dónde querés viajar?</h1>
+               <div class="linea-vuelo"></div>
+               <div id="contenedor-salida">
+                  <input type="text" name="ciudad-de-salida" placeholder="Ciudad de salida..." id="ciudad-de-salida">
+                  <ul id="sugerencias" class="lista"></ul>
+               </div>
+               <div id="contenedor-destino">
+                  <input type="text" name="ciudad-de-destino" placeholder="Ciudad de destino..."
+                     class="ciudad-de-destino">
+               </div>
+               <button id="boton-busqueda">
+                  Buscar
+               </button>
             </div>
-            <div class="tercera-seccion">
-                <h2 class="titulo">
-                   <span class="en-oferta">En oferta:</span> para viajar en familia 
-                </h2>
-                <div class="botones-familia">
-                    <button class="boton" data-estacion="seis">
-                        6 personas
-                    </button>
-                    <button class="boton" data-estacion="cinco">
-                        5 personas
-                    </button>
-                    <button class="boton" data-estacion="cuatro">
-                        4 personas
-                    </butto6 personasn>
-                    <button class="boton" data-estacion="tres">
-                        3 personas
-                    </button>
-                </div>
-                <div class="carrusel-familia">
-                    <img class="img" src="img/carrusel-estaciones/portadas/v-elbolson-rionegro-portada.png" alt="El Bolson, Rio Negro">
-                    <img class="img" src="img/carrusel-estaciones/portadas/v-mardeplata-buenosaires-portada.png" alt="Mar de Plata, Buenos Aires">
-                    <img class="img" src="img/carrusel-estaciones/portadas/v-pinamar-bsas-portada.png" alt="Pinamar, Buenos Aires">
-                    <img class="img" src="img/carrusel-estaciones/portadas/v-puerto-madryl-chubut-portada.png" alt="Puerto Madryl, Chubut">
-                    <img class="img" src="img/carrusel-estaciones/portadas/v-selvamisionera-misiones-portada.png" alt="Selva Misionera, Misiones">
-                </div>
-                <button class="boton-anterior-dos">&#10094;</button>
-                <button class="boton-siguiente-dos">&#10095;</button>
+         </div>
+         <div class="segunda-seccion">
+            <h2 class="titulo">
+               Disfruta de viajes por estación
+            </h2>
+            <div class="botones-estaciones">
+               <button class="boton" data-estacion="Primavera">
+                  Primavera
+               </button>
+               <button class="boton" data-estacion="">
+                  Verano
+               </button>
+               <button class="boton">
+                  Otoño
+               </button>
+               <button class="boton">
+                  Invierno
+               </button>
             </div>
-            <div class="cuarta-seccion">
-                <h1 class="titulo">¿Indeciso?</h1>
-                <p class="texto">Inspirate con nuestros videos</p>
-                <div class="contenedor-carrusel-videos">
-                    <div class="carrusel-videos">
-                        <div class="item">
-                            <iframe width="1003" height="564" src="https://www.youtube.com/embed/RTk9RlZOjl0" title="muestra n 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>"></iframe>
-                        </div>
-                        <div class="item">
-                            <iframe width="1003" height="564" src="https://www.youtube.com/embed/_1UnInfygOQ" title="muestra n 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-                        </div>
-                        <div class="item">
-                            <iframe width="1003" height="564" src="https://www.youtube.com/embed/Gs1Qpow6roA" title="muestra 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-                        </div>
-                    </div>
-                </div>
-                <button class="boton-anterior-tres">&#10094;</button>
-                <button class="boton-siguiente-tres">&#10095;</button>
+            <div class="carrusel-estaciones">
+               <img class="img" src="img/carrusel-estaciones/portadas/v-elbolson-rionegro-portada.png"
+                  alt="El Bolson, Rio Negro">
+               <img class="img" src="img/carrusel-estaciones/portadas/v-mardeplata-buenosaires-portada.png"
+                  alt="Mar de Plata, Buenos Aires">
+               <img class="img" src="img/carrusel-estaciones/portadas/v-pinamar-bsas-portada.png"
+                  alt="Pinamar, Buenos Aires">
+               <img class="img" src="img/carrusel-estaciones/portadas/v-puerto-madryl-chubut-portada.png"
+                  alt="Puerto Madryl, Chubut">
+               <img class="img" src="img/carrusel-estaciones/portadas/v-selvamisionera-misiones-portada.png"
+                  alt="Selva Misionera, Misiones">
             </div>
-        </div>
-    </main>
+            <button class="boton-anterior">&#10094;</button>
+            <button class="boton-siguiente">&#10095;</button>
 
-    <footer class="footer">
-        <div class="footer-contenido">
-            <h3>Travel<span>Now</span></h3>
-            <p>Dirección: Calle Cualquiera 123, Ciudad Cualquiera</p>
-            <p>Contacto: contacto@travelnow.com | +54 11 1234-5678</p>
-        </div>
-    </footer>
+         </div>
+         <div class="tercera-seccion">
+            <h2 class="titulo">
+               <span class="en-oferta">En oferta:</span> para viajar en familia
+            </h2>
+            <div class="botones-familia">
+               <button class="boton" data-estacion="seis">
+                  6 personas
+               </button>
+               <button class="boton" data-estacion="cinco">
+                  5 personas
+               </button>
+               <button class="boton" data-estacion="cuatro">
+                  4 personas
+                  </butto6 personasn>
+                  <button class="boton" data-estacion="tres">
+                     3 personas
+                  </button>
+            </div>
+            <div class="carrusel-familia">
+               <img class="img" src="img/carrusel-estaciones/portadas/v-elbolson-rionegro-portada.png"
+                  alt="El Bolson, Rio Negro">
+               <img class="img" src="img/carrusel-estaciones/portadas/v-mardeplata-buenosaires-portada.png"
+                  alt="Mar de Plata, Buenos Aires">
+               <img class="img" src="img/carrusel-estaciones/portadas/v-pinamar-bsas-portada.png"
+                  alt="Pinamar, Buenos Aires">
+               <img class="img" src="img/carrusel-estaciones/portadas/v-puerto-madryl-chubut-portada.png"
+                  alt="Puerto Madryl, Chubut">
+               <img class="img" src="img/carrusel-estaciones/portadas/v-selvamisionera-misiones-portada.png"
+                  alt="Selva Misionera, Misiones">
+            </div>
+            <button class="boton-anterior-dos">&#10094;</button>
+            <button class="boton-siguiente-dos">&#10095;</button>
+         </div>
+         <!-- <div class="cuarta-seccion"> -->
+         <!--    <h1 class="titulo">¿Indeciso?</h1> -->
+         <!--    <p class="texto">Inspirate con nuestros videos</p> -->
+         <!--    <div class="contenedor-carrusel-videos"> -->
+         <!--       <div class="carrusel-videos"> -->
+         <!--          <div class="item"> -->
+         <!--             <iframe width="1003" height="564" -->
+         <!--                src="https://www.youtube.com/embed/RTk9RlZOjl0?si=RDmFQgOLrj1DqLaA" title="muestra n 1" -->
+         <!--                frameborder="0" -->
+         <!--                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" -->
+         <!--                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+         <!--          </div> -->
+         <!--          <div class="item"> -->
+         <!--             <iframe width="1003" height="564" -->
+         <!--                src="https://www.youtube.com/embed/_1UnInfygOQ?si=B4RJcmnCTpDWCDX8" title="muestra n 2" -->
+         <!--                frameborder="0" -->
+         <!--                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" -->
+         <!--                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+         <!--          </div> -->
+         <!--          <div class="item"> -->
+         <!--             <iframe width="1003" height="564" -->
+         <!--                src="https://www.youtube.com/embed/Gs1Qpow6roA?si=s9f2Uezxx78fK2wZ" title="muestra n 3" -->
+         <!--                frameborder="0" -->
+         <!--                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" -->
+         <!--                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+         <!--          </div> -->
+         <!--       </div> -->
+         <!--    </div> -->
+         <!--    <button class="boton-anterior-tres">&#10094;</button> -->
+         <!--    <button class="boton-siguiente-tres">&#10095;</button> -->
+         <!-- </div> -->
+      </div>
+   </main>
 
-    <script>
-        window.addEventListener("load", () => {
-            document.getElementById("loader").classList.add("oculto");
-        });
-    </script>
-    <script src="script.js"></script>
+   <footer class="footer">
+      <div class="footer-contenido">
+         <h3>Travel<span>Now</span></h3>
+         <p>Dirección: Calle Cualquiera 123, Ciudad Cualquiera</p>
+         <p>Contacto: contacto@travelnow.com | +54 11 1234-5678</p>
+      </div>
+   </footer>
+
+   <script>
+      window.addEventListener("load", () => {
+         document.getElementById("loader").classList.add("oculto");
+      });
+   </script>
+   <script src="script.js"></script>
 
 </body>
+
 </html>
